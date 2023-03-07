@@ -9,6 +9,8 @@ namespace LoanSharkMVC.Models
     {
         public decimal Amount { get; set; }
 
+        public decimal DownPayment { get; set; }
+
         public decimal Rate { get; set; }
 
         public int Term { get; set; }

@@ -1,6 +1,7 @@
 ﻿using LoanSharkMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using LoanSharkMVC.Helpers;
 
 namespace LoanSharkMVC.Controllers
 {
@@ -28,14 +29,29 @@ namespace LoanSharkMVC.Controllers
             Loan loan = new();
 
             loan.Payment = 0.0m;
+            loan.DownPayment = 0.0m;
             loan.TotalCost = 0.0m;
             loan.TotalInterest = 0.0m;
             loan.Rate = 3.5m;
             loan.Amount = 15000m;
-            loan.Term = 60; 
-           
+            loan.Term = 60;
+
             return View(loan);
         }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+
+        public IActionResult App(Loan loan)
+        {
+            //Calculate the loan and get payments
+            var loanHelper = new LoanHelper();
+
+            Loan newloan = loanHelper.GetPayments(loan);
+
+
+            return View(newloan);
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
