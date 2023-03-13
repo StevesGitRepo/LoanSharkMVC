@@ -29,7 +29,7 @@ namespace LoanSharkMVC.Controllers
             Loan loan = new();
 
             loan.Payment = 0.0m;
-            loan.DownPayment = 0.0m;
+            loan.DownPayment = 1000m;
             loan.TotalCost = 0.0m;
             loan.TotalInterest = 0.0m;
             loan.Rate = 3.5m;
