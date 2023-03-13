@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="~/LoanSharkMVC.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+
 </head>
-<body>
+<body class="darkBackground">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light darkBackground border-bottom box-shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/LOAN SHARK TEXT Cropped2.png" width="120"/></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/LOAN SHARK TEXT Cropped2.png" width="120" /></a>
                 <button class="navbar-toggler navbar-light-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +29,7 @@
                             <a class="nav-link text-light ls-button" asp-area="" asp-controller="Home" asp-action="App">Loan Calculator</a>
                         </li>
                         @*<li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>*@
                     </ul>
                 </div>
@@ -43,12 +44,31 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Loan Shark - <a href="https://steveszymanski.com/" target="_blank">steveszymanski.com</a>
+            <div class="row">
+                <div class="col-8 ps-1 pt-1">
+            &copy; 2023 - Loan Shark -
+            <a href="https://steveszymanski.com/" target="_blank"><img class="pb-1" src="~/img/SteveBannerMarkFooterDarkNameOnly.png" width="120" /></a>
+
+                </div>
+                <div class="col-4 pt-2 text-center text-lg-end">
+            <a href="https://github.com/StevesGitRepo" target="_blank">
+                <i class="fab fa-github fa-2x me-3"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/steve-szymanski-245849238/"
+               target="_blank">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+
+                </div>
+
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js"
+            crossorigin="anonymous"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>Privacy
 </html>
