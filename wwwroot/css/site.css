@@ -120,7 +120,7 @@ h6 {
 }
 
 .fab {
-    color: var(--lsPink2-color);
+    color: var(--lsBlueCheck-color);
 }
 
     .fab:hover {
@@ -195,6 +195,8 @@ pre[class*='language-'] {
 }
 
 main > .container {
+
+    height: 100vh;
 }
 
 .darkBackground {
