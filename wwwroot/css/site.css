@@ -212,13 +212,21 @@ main > .container {
 }
 
 .navbar-light-toggler {
-    background: var(--lsPink2-color);
-    box-shadow: 0px 0px 0px rgb(199 241 255);
+    box-shadow: 0px 0px 4px rgb(199 241 255);
 }
 
-.navbar-light-toggler:active {
+.custom-toggler:active {
     background: white;
+
 }
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--lsPink2-color);
+} 
 
 .ls-button:hover {
     text-shadow: 0px 0px 4px #FF0099;
