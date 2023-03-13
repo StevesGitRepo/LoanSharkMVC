@@ -106,9 +106,12 @@ nav {
     background-color: var(--dark-color);
 }
 
-footer {
+#footer {
     background-color: var(--dark-color);
     position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 
 h1,
