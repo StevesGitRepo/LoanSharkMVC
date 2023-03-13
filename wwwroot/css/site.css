@@ -1,20 +1,22 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.body {
+    color: var(--dark-color);
+    height: 100%;
+    width: 100%;
 }
 
 /*Loan Form Styles*/
@@ -23,14 +25,14 @@ body {
     background-color: rgb(231, 231, 231);
 }
 
-.loanform input {
-    width: 100%;
-    padding: .5rem;
-}
+    .loanform input {
+        width: 100%;
+        padding: .5rem;
+    }
 
-.loanform button {
-    float: right;
-}
+    .loanform button {
+        float: right;
+    }
 
 #paymentTitle {
     text-align: center;
@@ -40,9 +42,10 @@ body {
 
 #payment {
     text-align: center;
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: bold;
-    color: #2B404F;
+    color: white;
+    text-shadow: 0px -1px 20px #FF0099;
 }
 
 #loanBreakdown {
@@ -55,31 +58,16 @@ body {
 
 #totalCost {
     font-weight: bold;
+    text-shadow: 0px 0px 8px #FF0099;
 }
 
-.btn:focus{
+.btn:focus {
     box-shadow: none;
 }
 
 .btn {
     border: 2px solid black;
     background-color: #fff;
-}
-
-/*BLUE BUTTON*/
-
-.btn-lsBlue {
-    border-color: blue;
-    color:blue
-}
-
-.btn-lsBlue:hover {
-    background-color: blue;
-    color: white;
-}
-
-.btn-lsBlue:active {
-    opacity: .6;
 }
 
 :root {
@@ -92,13 +80,10 @@ body {
     --sinovaBlue-color: rgb(19, 205, 232);
     --lsbg-color: rgb(16, 16, 16);
     --lsBlueFont-color: #e1e3f4;
-    --lsPinkFont-color: #ff66c4;
+    --lsPinkFont-color: rgb(255, 141, 236);
     --lsDarkBlueFont-color: #a6ecff;
 }
 
-body {
-    color: var(--dark-color);
-}
 
 .brand-logo {
     font-family: 'Big Shoulders Display', cursive;
@@ -106,10 +91,14 @@ body {
 }
 
 .button-ls-home {
-    background-color: var(--lsPinkFont-color);
-    color:aliceblue;
-    box-shadow: aliceblue 10px 10px ;
+    background-color: rgb(242, 245, 247);
+    color: rgb(30, 10, 94);
+    border-radius: 16px;
 }
+
+    .button-ls-home:hover {
+        box-shadow: 0px 0px 36px rgb(254 10 165);
+    }
 
 nav {
     background-color: var(--dark-color);
@@ -126,6 +115,11 @@ h4,
 h5,
 h6 {
     color: var(--lsBlueFont-color);
+}
+
+.icon {
+    font-size: 48px;
+    color: rgb(254 10 165);
 }
 
 .sticky-footer {
@@ -182,10 +176,29 @@ pre[class*='language-'] {
 }
 
 main > .container {
-    padding: 60px 15px 0;
-    margin-bottom: 5rem;
 }
 
 .darkBackground {
     background-color: var(--lsbg-color);
+}
+
+.nav-text {
+    color: var(--lsBlueFont-color);
+}
+
+.navbar-light-toggler {
+    background: rgb(254 10 165);
+    box-shadow: 0px 0px 0px rgb(250 250 250);
+}
+
+.navbar-light-toggler:active {
+    background: white;
+}
+
+.ls-button:hover {
+    text-shadow: 0px 0px 4px #FF0099;
+}
+
+.ls-button:active {
+    text-shadow: 0px 0px 4px white;
 }

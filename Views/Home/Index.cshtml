@@ -1,70 +1,69 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<main class="container-fluid darkBackground">
-    <div class="container col-xxl-8 px-4 py-5 py-lg-1">
-        <div class="row g-5 mt-lg-1 py-5 row-cols-1 row-cols-lg-2">
-            <div class="col order-last order-lg-first">
-                <h1 class="display-5 fw-bold lh-1 mb-3 text-light">
-                    <span class=""> LOAN SHARK </span>
-                    Mortgage Calculator
-                </h1>
-                <h4 class="lead">
-                    Determine your monthly payments with this free mortgage calculator. Try LoanShark today.
-                </h4>
-                <ul class="fa-ul pt-2 checklist checklistText">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Fundamentals
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Loops
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Functions
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript If/Then/Else
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check-square"></i></span>Javascript Boolean Logic
-                    </li>
-                </ul>
-                <a type="button"
-                   class="btn btn-outline-dark btn-lg px-4 me-md-2 button-ls-home mt-2"
-                   asp-action="app.html">
-                    <strong>Try It Out!</strong>
-                </a>
-                <h5 class="fw-bold mt-5">
+<body class="">
+    <main class="container-fluid darkBackground">
+        <div class="col-12 px-4 py-0 py-lg-2">
+            <div class="row g-2 mt-lg-1 py-4 row-cols-1 row-cols-lg-2">
+                <div class="col-12 col-lg-5 mt-lg-5 ms-lg-5 order-last order-lg-first">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 text-light text-start">Mortgage Calculator</h1>
+                    <h4 class="lead">
+                        A free mortgage calculator built with C#, ASP.NET and Model View Controller.
+                    </h4>
+                    <ul class="fa-ul pt-2 checklist checklistText">
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>Add a home value
+                        </li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>Set a down payment
+                        </li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>Select a loan term
+                        </li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>Add an interest rate
+                        </li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>Calculate the payment
+                        </li>
+                        <li class="mb-2">
+                            <span class="fa-li"><i class="fas fa-check-square"></i></span>See the life of the loan!
+                        </li>
+                    </ul>
+                    <a type="button"
+                       class="btn btn-outline-dark btn-lg px-4 me-md-2 button-ls-home mt-2 mb-4"
+                       asp-area="" asp-controller="Home" asp-action="App">
+                        <strong>Get Started</strong>
+                    </a>
                     <div class="d-flex">
-                        <div class="row">
-                            <div class="col">
-                                <i class="fab fa-js-square fa-2x jsIcon"></i>
+                        <div class="row mb-4">
+                            <div class="col icon">
+                                <i class="devicon-dot-net-plain-wordmark"></i>
                             </div>
-                            <div class="col">
-                                <i class="fab fa-bootstrap fa-2x bsIcon"></i>
+                            <div class="col icon">
+                                <i class="devicon-csharp-plain-wordmark"></i>
                             </div>
-                            <div class="col">
-                                <i class="fab fa-html5 fa-2x html5Icon"></i>
+                            <div class="col icon">
+                                <i class="devicon-html5-plain"></i>
                             </div>
-                            <div class="col">
-                                <i class="fab fa-css3-alt fa-2x css3Icon"></i>
+                            <div class="col icon">
+                                <i class="devicon-css3-plain"></i>
+                            </div>
+                            <div class="col icon">
+                                <i class="devicon-bootstrap-plain-wordmark"></i>
                             </div>
                         </div>
                     </div>
-                </h5>
-            </div>
-            <div class="col">
-                <img src="img/LoanSharkNeonSquare.png"
-                     class="img-fluid center-block d-block mx-auto"
-                     alt="100 Steps Logo"
-                     width="500"
-                     height="500" />
+                </div>
+                <div class="col">
+                    <img src="img/LoanSharkNeonSquare.png"
+                         class="img-fluid center-block d-block mx-auto"
+                         alt="Loan Shark"
+                         width="550"
+                         height="550" />
+                </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
+</body>
 
