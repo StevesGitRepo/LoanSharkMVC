@@ -162,6 +162,10 @@ footer .social > a {
     color: rgb(86, 61, 124);
 }
 
+.header {
+    color: var(--lsBlueCheck-color)
+}
+
 .html5Icon {
     color: rgb(227, 76, 38);
 }
