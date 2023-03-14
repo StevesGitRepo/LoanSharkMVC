@@ -10,11 +10,11 @@ namespace LoanSharkMVC.Helpers
             loan.Payment = CalcPayment(loan.Amount, loan.Rate, loan.Term, loan.DownPayment);
             //Create loop from 1 to term
             var balance = loan.Amount;
-            var totalInterest = 0.0m;
-            var monthlyInterest = 0.0m;
-            var monthlyPrincipal = 0.0m;
+            var totalInterest = 0.00m;
+            var monthlyInterest = 0.00m;
+            var monthlyPrincipal = 0.00m;
             var monthlyRate = CalcMonthlyRate(loan.Rate);
-            var downPayment = 0.0m;
+            var downPayment = 0.00m;
 
             for (int month = 0; month < loan.Term; month++)
             {
@@ -39,7 +39,7 @@ namespace LoanSharkMVC.Helpers
 
             loan.Amount = loan.Amount - loan.DownPayment;
             loan.TotalInterest = totalInterest;
-            loan.TotalCost = loan.Amount + totalInterest;   
+            loan.TotalCost = loan.Amount + totalInterest;
 
             //return the loan to the view
             return loan;
@@ -57,7 +57,7 @@ namespace LoanSharkMVC.Helpers
 
             var downPaymentD = Convert.ToDouble(downPayment);
 
-            var paymentD = ((amountD - downPaymentD)* rateD) / (1 - Math.Pow(1 + rateD, -term));
+            var paymentD = ((amountD - downPaymentD) * rateD) / (1 - Math.Pow(1 + rateD, -term));
 
 
             return Convert.ToDecimal(paymentD);
@@ -70,7 +70,7 @@ namespace LoanSharkMVC.Helpers
 
         private decimal CalcMonthlyInterest(decimal balance, decimal monthlyRate)
         {
-           return balance * monthlyRate;
+            return balance * monthlyRate;
         }
     }
 }

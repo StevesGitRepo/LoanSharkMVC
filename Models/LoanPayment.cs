@@ -11,11 +11,8 @@ namespace LoanSharkMVC.Models
     {
         public int Month { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:C2}", ApplyFormatInEditMode = true)]
-
         public decimal Payment { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:C2}")]
         public decimal MonthlyPrincipal { get; set; }
 
         public decimal MonthlyInterest { get; set; }
